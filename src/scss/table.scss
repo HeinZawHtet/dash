@@ -1,0 +1,7 @@
+.table-clickable {
+  tr {
+    &:hover {
+      background-color: red;
+    }
+  }
+}

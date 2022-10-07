@@ -1,0 +1,12 @@
+.btn-xs {
+  @include button-size($btn-padding-y-sm / 2, $btn-padding-x-sm / 2, $btn-font-size-sm, $btn-border-radius-sm)
+}
+
+.btn-outline-light {
+  @include button-outline-variant($body-color, $body-color, 'transparent', $gray-600, $body-color);
+  border-color: $gray-400;
+}
+
+.btn-fluid {
+  width: 100%;
+}

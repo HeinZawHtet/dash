@@ -1,0 +1,151 @@
+.sidebar {
+  min-height: 100%;
+  padding: 0 $spacer;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+
+  .logo {
+    text-align: center;
+    padding: $spacer 0;
+  }
+
+  &.primary {
+    background-color: $primary;
+    max-width: $sidebar-width;
+    // max-width: 250px;
+    transition: max-width 0.1s ease-out;
+
+    .nav-item {
+      // width: $sidebar-width;
+    }
+
+    .nav-link {
+      padding-left: 0;
+      padding-right: 0;
+      height: 40px;
+      justify-content: center;
+      transition: padding-left 0.1s ease-out;
+
+      span {
+        white-space: nowrap;
+        display: none;
+      }
+    }
+
+    &:hover {
+      max-width: 250px;
+
+      .nav-item {
+        width: 200px;
+      }
+
+      .nav-link {
+        padding-left: $nav-link-padding-x;
+        padding-right: $nav-link-padding-x;
+        justify-content: flex-start;
+
+        i {
+          margin-right: $spacer;
+        }
+
+        span {
+          display: block;
+        }
+      }
+
+      .has-sub {
+        &::before {
+          display: inline-block;
+        }
+      }
+    }
+
+    .nav-link {
+      color: $white;
+      display: flex;
+      align-items: center;
+      border-radius: $border-radius;
+
+      &:hover {
+        background-color: $nav-link-hover-color;
+      }
+
+      i {
+        background-color: $white;
+        border-radius: $border-radius-pill;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        color: $primary;
+        font-size: $font-size-sm / 1.5;
+        line-height: 20px;
+        text-align: center;
+        box-shadow: $box-shadow-sm;
+      }
+
+      &.active {
+        color: $primary;
+        background-color: $white;
+        box-shadow: $box-shadow-sm;
+
+        i {
+          background-color: $primary;
+          color: $white;
+        }
+      }
+    }
+
+    .has-sub {
+      position: relative;
+
+      &::before {
+        border-style: solid;
+        border-width: 0.15em 0.15em 0 0;
+        border-color: $white;
+        content: "";
+        display: none;
+        height: 0.45em;
+        right: 16px;
+        position: absolute;
+        top: 16px;
+        transform: rotate(135deg);
+        vertical-align: top;
+        width: 0.45em;
+      }
+
+      .nav {
+        position: relative;
+        margin-left: $spacer;
+
+        .nav-item {
+          display: block;
+          width: 100%;
+          margin-left: $spacer;
+        }
+
+        &::before {
+          content: " ";
+          position: absolute;
+          left: $spacer / 2;
+          top: 0;
+          bottom: 0;
+          border-left: 1px solid $border-color;
+        }
+      }
+    }
+  }
+
+  .left {
+  }
+}
+
+.sub-sidebar {
+  position: fixed;
+  left: $sidebar-width;
+  top: 0;
+  bottom: 0;
+  display: none;
+}

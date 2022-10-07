@@ -1,0 +1,23 @@
+.input-group {
+  .icon {
+    @extend .input-group-text;
+    @include border-start-radius($border-radius);
+    background-color: $input-bg;
+    padding: $input-group-addon-padding-y $input-group-addon-padding-x;
+    padding-right: 0;
+  }
+}
+
+.form-select {
+  option {
+    padding: $spacer / 2 $spacer;
+    border-radius: $border-radius;
+  }
+  option:checked {
+    background-color: $gray-300;
+  }
+}
+
+.form-floating > label {
+  color: $input-placeholder-color;
+}

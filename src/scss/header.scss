@@ -1,0 +1,37 @@
+.page-header {
+  background-color: $white;
+  padding: $spacer;
+
+  h1 {
+    font-size: $h3-font-size;
+    margin-bottom: 0;
+  }
+
+  .lead {
+    color: $text-muted;
+    margin-bottom: 0;
+  }
+}
+
+.page-header-nav {
+  border-bottom: 2px solid $border-color;
+  margin-left: -$spacer;
+  margin-right: -$spacer;
+  margin-bottom: -$spacer;
+
+  .nav-item {
+    margin-bottom: -2px;
+
+    .nav-link {
+      border-bottom: 2px solid transparent;
+      border-radius: 0;
+      color: $text-muted;
+
+      &.active {
+        color: $primary;
+        border-bottom-color: $primary;
+        background-color: transparent;
+      }
+    }
+  }
+}
