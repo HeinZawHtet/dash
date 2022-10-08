@@ -4,8 +4,8 @@
 
 - [x] Accordion
 - [x] Alerts
-- [ ] Badge
-- [ ] Breadcrumb
+- [x] Badge
+- [x] Breadcrumb
 - [ ] Buttons
 - [ ] Button group
 - [ ] Card

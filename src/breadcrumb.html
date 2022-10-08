@@ -1,0 +1,97 @@
+<extends src="./layouts/side-menu.html">
+  <block name="body" type="append">
+    <div class="body">
+      <div class="page-header">
+        <h1>Breadcrumb</h1>
+        <p class="lead">Indicate the current page’s location within a navigational hierarchy that automatically adds
+          separators via CSS.</p>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Collapsed Breadcrumb</h5>
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb breadcrumb-arrow">
+                    <li class="breadcrumb-item">
+                      <div class="dropdown">
+                        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="ri-more-line"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Icon</h5>
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb breadcrumb-arrow">
+                    <li class="breadcrumb-item">
+                      <i class="ri-home-smile-2-line"></i>
+                      <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <i class="ri-login-box-line"></i>
+                      <span>Login</span>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      <i class="ri-checkbox-circle-fill"></i>
+                      <span>Success</span>
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Basic</h5>
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Large</h5>
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb breadcrumb-lg breadcrumb-arrow">
+                    <li class="breadcrumb-item">
+                      <i class="ri-home-smile-2-line"></i>
+                      <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <i class="ri-login-box-line"></i>
+                      <span>Login</span>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      <i class="ri-checkbox-circle-fill"></i>
+                      <span>Success</span>
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </block>
+</extends>

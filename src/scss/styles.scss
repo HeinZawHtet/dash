@@ -10,6 +10,8 @@
 
 @import "./accordion.scss";
 @import "./alert.scss";
+@import "./badge.scss";
+@import "./breadcrumb.scss";
 
 body,
 html {
@@ -38,8 +40,9 @@ button {
 }
 
 .content-white {
-  @extend .card;
-  @extend .card-body;
+  background-color: $white;
+  padding: $card-spacer-x;
+  border-radius: $card-border-radius;
   margin: $spacer;
 }
 

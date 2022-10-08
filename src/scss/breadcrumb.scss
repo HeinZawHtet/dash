@@ -1,0 +1,46 @@
+.breadcrumb-item {
+  a {
+    text-decoration: none;
+  }
+  .btn {
+    padding: $btn-padding-y-xs $btn-padding-x-xs;
+    background-color: $gray-200;
+    line-height: 0.5;
+  }
+  i, span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.breadcrumb-lg {
+  .breadcrumb-item {
+    text-align: center;
+    padding: 0 $spacer;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -10px;
+    }
+
+    i {
+      display: block;
+      font-size: $font-size-base * 2;
+    }
+  }
+}
+
+.breadcrumb-arrow {
+  .breadcrumb-item {
+    &+.breadcrumb-item {
+      &::before {
+        content: escape-svg(
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='#{$breadcrumb-divider-color}'/%3E%3C/svg%3E")
+        );
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+<extends src="./layouts/side-menu.html">
+  <block name="body" type="append">
+    <div class="body">
+      <div class="page-header">
+        <h1>Badges</h1>
+        <p class="lead">Documentation and examples for badges, our small count and labeling component.</p>
+      </div>
+      <div class="content-white">
+        <h5 class="card-title mb-3">Basic Badges</h5>
+        <span class="badge text-bg-primary">Primary</span>
+        <span class="badge text-bg-secondary">Secondary</span>
+        <span class="badge text-bg-success">Success</span>
+        <span class="badge text-bg-danger">Danger</span>
+        <span class="badge text-bg-warning">Warning</span>
+        <span class="badge text-bg-info">Info</span>
+        <span class="badge text-bg-light">Light</span>
+        <span class="badge text-bg-dark">Dark</span>
+        <hr />
+        <h5 class="card-title mb-3">Button & Positioned</h5>
+        <div class="hstack gap-3">
+          <button type="button" class="btn btn-primary">
+            Notifications <span class="badge text-bg-danger">4</span>
+          </button>
+          <button type="button" class="btn btn-primary position-relative">
+            Inbox
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+          <button type="button" class="btn btn-primary position-relative">
+            Profile
+            <span
+              class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+              <span class="visually-hidden">New alerts</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </block>
+</extends>
