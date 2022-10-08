@@ -17,8 +17,9 @@
     }
 
     .accordion-item {
-      border-color: $value;
+      border-color: shift-color($value, 20);
     }
+
     .accordion-body {
       background-color: $value;
       color: color-contrast($value);
