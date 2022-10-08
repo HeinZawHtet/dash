@@ -1,0 +1,37 @@
+<extends src="./layouts/side-menu.html">
+  <block name="body" type="append">
+    <div class="body">
+      <div class="page-header">
+        <h1>Alert</h1>
+        <p class="lead">Provide contextual feedback messages for typical user actions with the handful of available and
+          flexible alert messages</p>
+      </div>
+      <div class="content">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Basic Alerts</h5>
+            <div class="row">
+              <each loop="color in ['primary','secondary', 'success', 'info', 'warning', 'danger', 'light', 'dark']">
+                <div class="col-md-6">
+                  <div class="alert alert-{{color}}" role="alert">
+                    <i class="bi bi-exclamation-circle-fill"></i>
+                    A simple primary alert—check it out!
+                  </div>
+                </div>
+              </each>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Dismiss</h5>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+              <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </block>
+</extends>

@@ -3,7 +3,7 @@
 ## TODO
 
 - [x] Accordion
-- [ ] Alerts
+- [x] Alerts
 - [ ] Badge
 - [ ] Breadcrumb
 - [ ] Buttons
