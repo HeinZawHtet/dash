@@ -22,12 +22,17 @@ $font-weight-base: 500;
 $headings-font-weight: 700;
 
 $border-radius: .6rem;
+$border-color: $gray-200;
 
 $card-spacer-x: $spacer * 2;
 $card-spacer-y: $spacer * 2;
 $card-border-width: 0;
 
 $sidebar-width: 80px;
+
+// Secondary Sidebar
+$secondary-sidebar-width: 240px;
+$secondary-sidebar-background: $gray-200;
 
 $table-striped-bg: #f7f9fc;
 
@@ -59,3 +64,5 @@ $accordion-button-active-bg: $gray-200;
 
 // Breadcrumb
 // $breadcrumb-divider-color: $gray-200;
+
+$list-group-border-color: $gray-200;

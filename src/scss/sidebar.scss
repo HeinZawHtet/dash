@@ -97,55 +97,67 @@
         }
       }
     }
-
-    .has-sub {
-      position: relative;
-
-      &::before {
-        border-style: solid;
-        border-width: 0.15em 0.15em 0 0;
-        border-color: $white;
-        content: "";
-        display: none;
-        height: 0.45em;
-        right: 16px;
-        position: absolute;
-        top: 16px;
-        transform: rotate(135deg);
-        vertical-align: top;
-        width: 0.45em;
-      }
-
-      .nav {
-        position: relative;
-        margin-left: $spacer;
-
-        .nav-item {
-          display: block;
-          width: 100%;
-          margin-left: $spacer;
-        }
-
-        &::before {
-          content: " ";
-          position: absolute;
-          left: $spacer / 2;
-          top: 0;
-          bottom: 0;
-          border-left: 1px solid $border-color;
-        }
-      }
-    }
   }
 
   .left {
   }
 }
 
-.sub-sidebar {
+.nav {
+  &.has-sub {
+    position: relative;
+
+    &::before {
+      border-style: solid;
+      border-width: 0.15em 0.15em 0 0;
+      border-color: $white;
+      content: "";
+      display: none;
+      height: 0.45em;
+      right: 16px;
+      position: absolute;
+      top: 16px;
+      transform: rotate(135deg);
+      vertical-align: top;
+      width: 0.45em;
+    }
+
+    .nav {
+      position: relative;
+      margin-left: $spacer;
+
+      .nav-item {
+        display: block;
+        width: 100%;
+        margin-left: $spacer;
+      }
+
+      &::before {
+        content: " ";
+        position: absolute;
+        left: $spacer / 2;
+        top: 0;
+        bottom: 0;
+        border-left: 1px solid $border-color;
+      }
+    }
+  }
+}
+
+.secondary-sidebar {
   position: fixed;
   left: $sidebar-width;
   top: 0;
   bottom: 0;
-  display: none;
+  width: $secondary-sidebar-width;
+  padding: $spacer;
+  background-color: $secondary-sidebar-background;
+
+  .nav-link {
+    border-radius: $border-radius;
+
+    &.active {
+      background-color: shade-color($secondary-sidebar-background, 5);
+    }
+  }
 }

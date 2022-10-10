@@ -12,6 +12,7 @@
 @import "./alert.scss";
 @import "./badge.scss";
 @import "./breadcrumb.scss";
+@import "./icon.scss";
 
 body,
 html {
@@ -33,6 +34,12 @@ button {
 
 .body {
   margin-left: $sidebar-width;
+}
+
+.with-secondary-sidebar {
+  .body {
+    margin-left: $secondary-sidebar-width + $sidebar-width;
+  } 
 }
 
 .content {
