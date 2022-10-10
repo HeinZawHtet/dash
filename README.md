@@ -6,7 +6,7 @@
 - [x] Alerts
 - [x] Badge
 - [x] Breadcrumb
-- [ ] Buttons
+- [x] Buttons
 - [ ] Button group
 - [ ] Card
 - [ ] Carousel
@@ -30,7 +30,7 @@
 ## Usage
 
 Add this stylesheet to the head of HTML
-```bash
+```html
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dash-admin/1.0.0/css/dash.min.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 ```
 

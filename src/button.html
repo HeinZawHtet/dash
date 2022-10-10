@@ -1,0 +1,99 @@
+<extends src="./layouts/side-menu.html">
+  <block name="body" type="append">
+    <div class="body">
+      <div class="page-header">
+        <h1>Buttons</h1>
+        <p class="lead">
+          Use Bootstrap’s custom button styles for actions in forms, dialogs,
+          and more with support for multiple sizes, states, and more.
+        </p>
+      </div>
+      <div class="content">
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Buttons</h5>
+                <div class="hstack gap-3 flex-wrap">
+                  <each
+                    loop="color in ['primary','secondary', 'success', 'info', 'warning', 'danger', 'light', 'dark', 'link']">
+                    <button type="button" class="btn btn-{{color}}">
+                      {{color.charAt(0).toUpperCase() + color.slice(1)}}
+                    </button>
+                  </each>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Outline Buttons</h5>
+                <div class="hstack gap-3 flex-wrap">
+                  <each
+                    loop="color in ['primary','secondary', 'success', 'info', 'warning', 'danger', 'light', 'dark', 'link']">
+                    <button type="button" class="btn btn-outline-{{color}}">
+                      {{color.charAt(0).toUpperCase() + color.slice(1)}}
+                    </button>
+                  </each>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Sizes</h5>
+                <div class="hstack gap-3 flex-wrap">
+                  <each loop="size in ['lg','sm', 'xs']">
+                    <button type="button" class="btn btn-primary btn-{{size}}">
+                      {{size.charAt(0).toUpperCase() + size.slice(1)}} Button
+                    </button>
+                  </each>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Disabled State</h5>
+                <div class="hstack gap-3 flex-wrap">
+                  <button type="button" class="btn btn-primary" disabled>Primary button</button>
+                  <button type="button" class="btn btn-secondary" disabled>Button</button>
+                  <button type="button" class="btn btn-outline-primary" disabled>Primary button</button>
+                  <button type="button" class="btn btn-outline-secondary" disabled>Button</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Block Buttons</h5>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-primary" type="button">Button</button>
+                  <button class="btn btn-primary" type="button">Button</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Toggle States</h5>
+                <div class="hstack gap-3 flex-wrap">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="button">Toggle button</button>
+                  <button type="button" class="btn btn-primary active" data-bs-toggle="button"
+                    aria-pressed="true">Active toggle button</button>
+                  <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Disabled toggle
+                    button</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </block>
+</extends>
